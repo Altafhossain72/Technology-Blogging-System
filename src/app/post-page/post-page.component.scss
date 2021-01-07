@@ -1,0 +1,25 @@
+.post {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  .btn {
+    text-decoration: underline;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.content {
+  p {
+    text-align: justify;
+  }
+}

@@ -1,0 +1,13 @@
+<div
+  class="posts"
+  *ngIf="posts; else loader"
+>
+  <app-post
+    [post]="post"
+    *ngFor="let post of posts"
+  ></app-post>
+</div>
+
+<ng-template #loader>
+  <h1 class="text-center">loading</h1>
+</ng-template>

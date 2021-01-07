@@ -1,0 +1,38 @@
+<div class="edit">
+  <form *ngIf="form; else loader" [formGroup]="form" (submit)="submit()">
+    <div
+      class="form-control"
+      [ngClass]="{invalid: form.get('title').touched && form.get('title').invalid}"
+    >
+      <label for="title">Post title</label>
+      <input id="title" type="text" formControlName="title">
+      <div
+        class="validation"
+        *ngIf="form.get('title').touched && form.get('title').invalid"
+      >
+        <small *ngIf="form.get('title').errors.required">This field is required</small>
+      </div>
+    </div>
+
+    <div class="form-control">
+      <quill-editor formControlName="text">
+      </quill-editor>
+    </div>
+
+    <div class="btn-footer">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        [disabled]="form.invalid || submitted"
+      >Update</button>
+      <a
+        class="back-link"
+        [routerLink]="['/admin', 'dashboard']"
+      >Back</a>
+    </div>
+  </form>
+  <ng-template #loader>
+    <p class="loader">Loading...</p>
+  </ng-template>
+</div>
+

@@ -1,0 +1,33 @@
+:host {
+  height: fit-content;
+  display: flex;
+  align-self: center;
+  position: relative;
+  margin: 0 auto;
+}
+form {
+  min-width: 500px;
+  margin: 0 auto;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  .enter {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.errors {
+  position: absolute;
+  bottom: 105%;
+  left: 0;
+}
+
+.warning {
+  padding: 5px;
+  font-size: 0.7rem;
+  border: 1px solid red;
+  color: red;
+}

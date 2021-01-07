@@ -1,0 +1,28 @@
+:host {
+  width: 100%;
+}
+
+.edit {
+  display: flex;
+  flex-direction: column;
+}
+
+.back-link {
+  color: black;
+  padding: 0.4rem 1.3rem;
+  text-decoration: underline;
+}
+
+.loader {
+  width: 100%;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+
+.btn-footer {
+  display: flex;
+  justify-content: space-between;
+}

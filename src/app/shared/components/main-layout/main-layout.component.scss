@@ -1,0 +1,13 @@
+.main {
+  justify-content: space-between;
+  a {
+    color: black;
+  }
+}
+
+.admin-link {
+  color: black;
+  &:hover {
+    color: #000;
+  }
+}
